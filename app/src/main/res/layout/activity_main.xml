@@ -9,60 +9,45 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.drunk.cornmazesimulator.MainActivity">
 
-    <TextClock
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/textClock"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="14dp" />
 
     <Button
+        android:text="Start"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="I Am dumb"
-        android:id="@+id/ResetButton"
         android:layout_alignParentBottom="true"
-        android:layout_toRightOf="@+id/textClock"
-        android:layout_toEndOf="@+id/textClock"
-        android:layout_marginLeft="39dp"
-        android:layout_marginStart="39dp"
-        android:layout_marginBottom="23dp" />
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="37dp"
+        android:layout_marginEnd="37dp"
+        android:layout_marginBottom="63dp"
+        android:id="@+id/startButton" />
 
-    <Button
+    <TextView
+        android:text="Good Morning All. This is self-declared award winning game that takes place in a reverse universe where humans look like corn and corn look like humans. hahaha."
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Foward"
-        android:id="@+id/FowardButton"
-        android:layout_above="@+id/RightButton"
-        android:layout_centerHorizontal="true" />
+        android:id="@+id/textView"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/startButton"
+        android:layout_alignEnd="@+id/startButton" />
 
-    <Button
+    <TextView
+        android:text="Objectives: The objective of this game is navigate through this dumb mase to try and reach the end where you will obtain an unlimited amount of human husks."
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Turn Around"
-        android:id="@+id/TurnAroundButton"
-        android:layout_above="@+id/ResetButton"
-        android:layout_alignLeft="@+id/FowardButton"
-        android:layout_alignStart="@+id/FowardButton"
-        android:layout_toLeftOf="@+id/RightButton"
-        android:layout_toStartOf="@+id/RightButton" />
+        android:layout_below="@+id/textView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="31dp"
+        android:id="@+id/textView3" />
 
-    <Button
-        android:layout_width="match_parent"
+    <TextView
+        android:text="Direction: The directions of this game are fairly simple. You simply navigate through the maze with the use of the buttons provided. You many either go foward, move levt, move right, or turn around each turn. If you feel like you aren't intelligent enough to navigate through the simple maze, you may click the button 'I am dumb' which will hire a monkey to solve the maze for you."
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Left"
-        android:id="@+id/LeftButton"
-        android:layout_above="@+id/TurnAroundButton"
-        android:layout_toLeftOf="@+id/TurnAroundButton"
-        android:layout_toStartOf="@+id/TurnAroundButton" />
-
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Right"
-        android:id="@+id/RightButton"
-        android:layout_alignTop="@+id/LeftButton"
-        android:layout_toRightOf="@+id/FowardButton"
-        android:layout_toEndOf="@+id/FowardButton" />
+        android:layout_below="@+id/textView3"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="32dp"
+        android:id="@+id/textView4" />
 </RelativeLayout>
