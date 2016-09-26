@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.drunk.cornmazesimulator.ButtonActions">
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="I Am dumb"
+        android:id="@+id/ResetButton"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="39dp"
+        android:layout_marginStart="39dp"
+        android:layout_marginBottom="23dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Foward"
+        android:id="@+id/FowardButton"
+        android:layout_above="@+id/RightButton"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Turn Around"
+        android:id="@+id/TurnAroundButton"
+        android:layout_above="@+id/ResetButton"
+        android:layout_alignLeft="@+id/FowardButton"
+        android:layout_alignStart="@+id/FowardButton"
+        android:layout_toLeftOf="@+id/RightButton"
+        android:layout_toStartOf="@+id/RightButton" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Left"
+        android:id="@+id/LeftButton"
+        android:layout_above="@+id/TurnAroundButton"
+        android:layout_toLeftOf="@+id/TurnAroundButton"
+        android:layout_toStartOf="@+id/TurnAroundButton" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Right"
+        android:id="@+id/RightButton"
+        android:layout_alignTop="@+id/LeftButton"
+        android:layout_toRightOf="@+id/FowardButton"
+        android:layout_toEndOf="@+id/FowardButton" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/openlegs"
+        android:id="@+id/corn"
+        android:layout_above="@+id/FowardButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="108dp" />
+</RelativeLayout>
