@@ -29,9 +29,9 @@ public class ButtonActions extends MainActivity implements View.OnClickListener 
 
 
 
-        int counter = 1;
+        int currentImage = 1;
         public void onClick(View v){
-                counter = imageChange(counter);
+                currentImage = imageChange(currentImage);
                 if (v.getId() == R.id.FowardButton) {
                        fowardMove();
                 }
@@ -47,16 +47,16 @@ public class ButtonActions extends MainActivity implements View.OnClickListener 
 
 
         }
-        public int imageChange(int counter){
-                if (counter == 1) {
+        public int imageChange(int currentImage){
+                if (currentImage == 1) {
                         img.setImageResource(R.drawable.closedlegs);
-                        counter = 0;
+                        currentImage = 0;
                 } else {
                         img.setImageResource(R.drawable.openlegs);
-                        counter = 1;
+                        currentImage = 1;
                 }
 
-              return counter;
+              return currentImage;
         }
 
         public void fowardMove(){
