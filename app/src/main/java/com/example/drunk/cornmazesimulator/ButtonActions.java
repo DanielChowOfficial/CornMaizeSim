@@ -27,7 +27,7 @@ public class ButtonActions extends MainActivity implements View.OnClickListener 
                 img = (ImageView) findViewById(R.id.corn);
         }
 
-
+//
 
         int currentImage = 1;
         public void onClick(View v){
